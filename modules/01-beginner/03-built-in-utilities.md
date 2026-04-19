@@ -1,40 +1,37 @@
-# Modul 03: Utilitas dan Fitur Bawaan Tmux
+# Modul 03: Akses Cepat Utilitas Bawaan Tmux
 
-Tmux menyertakan beberapa utilitas internal untuk pemantauan visual, manajemen interaktif, dan dokumentasi perintah tanpa perlu menginstal aplikasi tambahan.
+Kekuatan utama Tmux adalah kecepatan. Anda tidak perlu mengetik perintah panjang untuk fitur pemantauan atau manajemen; semuanya hanya berjarak satu ketukan tombol setelah `Prefix` (Ctrl + b).
 
-## 1. Clock Mode (Visual)
-Tmux memiliki fitur jam digital layar penuh yang berguna untuk memantau waktu saat bekerja dalam mode fokus.
-- **Shortcut**: `Prefix + t`
-- **Keluar**: Tekan tombol apapun.
-- **Kustomisasi**:
-  ```tmux
-  set -g clock-mode-colour green
-  set -g clock-mode-style 24
-  ```
+## 1. Clock Mode (Jam Digital Cepat)
+Butuh melihat waktu saat bekerja dalam layar penuh? Tidak perlu keluar dari terminal.
+- **Akses**: Tekan `Prefix` lalu `t`.
+- Jam digital akan langsung memenuhi pane aktif.
+- **Keluar**: Tekan tombol apa saja (seperti `q` atau `Esc`).
 
-## 2. Interactive Chooser (Manajemen)
-Fitur ini memberikan antarmuka visual untuk menavigasi struktur hirarkis Tmux.
-- **Choose Tree**: `Prefix + s` (Sesi) atau `Prefix + w` (Window).
-  - Memungkinkan pencarian (tekan `/`), navigasi dengan kursor, dan melihat preview konten pane sebelum berpindah.
-- **Choose Client**: `Prefix + D`.
-  - Digunakan untuk melihat daftar terminal yang terhubung ke server Tmux dan memutuskan koneksi (*detach*) terminal tertentu secara paksa.
+## 2. Interactive Chooser (Manajemen Visual)
+Jangan menghafal nama sesi jika Anda bisa melihatnya secara visual.
+- **Daftar Sesi (Pohon)**: Tekan `Prefix` lalu `s`.
+- **Daftar Window**: Tekan `Prefix` lalu `w`.
+  - Gunakan panah Atas/Bawah untuk memilih, tekan `Enter` untuk berpindah.
+- **Manajemen Client**: Tekan `Prefix` lalu `D` (D besar) untuk memutus paksa terminal lain yang terhubung.
 
-## 3. Command Prompt (Interaktivitas)
-Semua perintah Tmux dapat dijalankan langsung melalui command prompt internal tanpa keluar dari sesi.
-- **Akses**: `Prefix + :`
-- **Fungsi**: Mendukung auto-completion (tombol `Tab`) untuk perintah dan opsi. Contoh: Ketik `split-window -h` untuk membagi layar.
+## 3. Command Prompt (Eksekusi Langsung)
+Untuk menjalankan perintah Tmux tanpa harus keluar ke shell biasa.
+- **Akses**: Tekan `Prefix` lalu `:`.
+- Anda bisa mengetik perintah seperti `split-window` dengan dukungan *auto-completion* (tombol `Tab`).
 
 ## 4. Customize Mode (Konfigurasi Visual)
-Tersedia pada Tmux versi 3.1 ke atas, fitur ini menyediakan UI berbasis terminal untuk mengubah opsi konfigurasi secara real-time.
-- **Akses**: Jalankan `tmux customize-mode` di terminal atau bind ke tombol tertentu.
-- **Fungsi**: Memungkinkan penelusuran seluruh opsi server, sesi, dan window serta mengubah nilainya tanpa mengedit file `.tmux.conf` secara manual.
+Tersedia pada Tmux 3.1+. Mengubah konfigurasi tanpa perlu menyentuh file teks.
+- **Akses**: Ketik `tmux customize-mode` di command prompt atau shell.
+- Telusuri dan ubah opsi server, sesi, dan window secara langsung.
 
-## 5. Dokumentasi Internal (List Keys)
-Melihat daftar lengkap shortcut yang terdaftar di dalam sistem, termasuk binding default dan binding kustom Anda.
-- **Shortcut**: `Prefix + ?`
-- **Fungsi**: Berguna untuk memeriksa apakah terjadi konflik antara shortcut kustom dengan shortcut bawaan. Navigasi di dalamnya menggunakan mode scrollback (Gaya Vim atau Emacs).
+## 5. Dokumentasi Shortcut Bawaan
+Lupa tombol apa untuk melakukan apa? Tanya langsung ke Tmux.
+- **Akses**: Tekan `Prefix` lalu `?`.
+- Menampilkan daftar lengkap semua shortcut yang sedang aktif. Navigasi menggunakan panah, tekan `q` untuk keluar.
 
-## 6. Pane Indicators
-Menampilkan nomor indeks pada setiap pane untuk memudahkan perpindahan fokus kursor.
-- **Shortcut**: `Prefix + q`
-- **Fungsi**: Angka akan muncul sebentar di setiap pane. Tekan angka yang sesuai untuk langsung berpindah fokus ke pane tersebut.
+## 6. Pane Indicators (Navigasi Instan)
+Pusing mencari pane aktif jika layar terbagi banyak?
+- **Akses**: Tekan `Prefix` lalu `q`.
+- Angka raksasa akan muncul sebentar di setiap pane. Ketik angka tersebut dengan cepat untuk langsung memindahkan kursor ke pane yang diinginkan.
+
