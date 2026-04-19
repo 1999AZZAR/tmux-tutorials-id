@@ -6,6 +6,7 @@ Kurikulum komprehensif dari arsitektur dasar hingga otomatisasi tingkat profesio
 Fokus pada penguasaan navigasi dan manajemen tampilan terminal.
 1. [Pengenalan dan Arsitektur](modules/01-beginner/01-introduction.md)
 2. [Manajemen Pane dan Window](modules/01-beginner/02-panes-windows.md)
+3. [Utilitas dan Fitur Bawaan](modules/01-beginner/03-built-in-utilities.md)
 
 ## Fase 2: Menengah (Intermediate)
 Fokus pada produktivitas, pencarian, dan persistensi sesi.
