@@ -1,0 +1,18 @@
+# OS Metadata
+.DS_Store
+*db*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Tmux / Automation logs
+*.log
+.tmuxinator.log
+
+# Temporary research data
+research/data/tmp/
+research/data/temp/
