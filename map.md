@@ -14,9 +14,10 @@ Fokus pada produktivitas, pencarian, dan persistensi sesi.
 3. [Konfigurasi .tmux.conf Dasar](modules/02-intermediate/02-configuration.md)
 
 ## Fase 3: Lanjutan (Advanced)
-Fokus pada ekosistem plugin dan manajemen otomatis.
+Fokus pada ekosistem plugin, otomatisasi internal, dan scripting.
 1. [Plugin dan Ekosistem (TPM)](modules/03-advanced/01-plugins-tpm.md)
-2. [Scripting dan Otomatisasi Layout](modules/03-advanced/02-scripting-automation.md)
+2. [Konfigurasi Lanjut: Hooks dan Pop-ups](modules/03-advanced/03-advanced-customization.md)
+3. [Scripting dan Otomatisasi Layout](modules/03-advanced/02-scripting-automation.md)
 
 ## Fase 4: Profesional (Professional)
 Fokus pada kustomisasi visual mendalam dan kolaborasi tim.
