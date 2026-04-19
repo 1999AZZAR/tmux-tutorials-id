@@ -20,6 +20,7 @@ Fokus pada ekosistem plugin, otomatisasi internal, dan scripting.
 3. [Scripting dan Otomatisasi Layout](modules/03-advanced/02-scripting-automation.md)
 
 ## Fase 4: Profesional (Professional)
-Fokus pada kustomisasi visual mendalam dan kolaborasi tim.
+Fokus pada kustomisasi visual mendalam, kolaborasi tim, dan integrasi sistem.
 1. [Kustomisasi Status Bar dan Visual](modules/04-pro/01-status-bar.md)
 2. [Kolaborasi dan Pair Programming](modules/04-pro/02-collaboration.md)
+3. [Integrasi Sistem dan Alur Kerja FZF](modules/04-pro/03-system-integration.md)
